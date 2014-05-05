@@ -1,6 +1,7 @@
 package DiamondEnder;
  
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,6 +11,9 @@ import DiamondEnder.items.DiamondEnderIngot;
 import DiamondEnder.items.DiamondEnderSeeds;
 import DiamondEnder.items.RawDiamondEnder;
 import DiamondEnder.items.tools.diamondEnder.DiamondEnderPickaxe;
+import DiamondEnder.util.DiamondEnderTabT1;
+import DiamondEnder.util.DiamondEnderTabT2;
+import DiamondEnder.util.DiamondEnderTabT3;
 import DiamondEnder.util.RecipeEventHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -28,6 +32,9 @@ public class DiamondEnder
  
     // create custom creativetab for mod items
     
+    public static CreativeTabs tabDiamondEnderT1 = new DiamondEnderTabT1(CreativeTabs.getNextID(), "DiamondEnderT1");
+    public static CreativeTabs tabDiamondEnderT2 = new DiamondEnderTabT2(CreativeTabs.getNextID(), "DiamondEnderT2");
+    public static CreativeTabs tabDiamondEnderT3 = new DiamondEnderTabT3(CreativeTabs.getNextID(), "DiamondEnderT3");
     
     //Materials
     
