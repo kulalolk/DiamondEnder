@@ -3,18 +3,18 @@ package DiamondEnder.items.tools.diamondEnder;
 import DiamondEnder.DiamondEnder;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSword;
  
-public class DiamondEnderPickaxe extends ItemPickaxe {
+public class DiamondEnderSword extends ItemSword {
  
 	// Constructors
-	public DiamondEnderPickaxe(ToolMaterial material)
+	public DiamondEnderSword(ToolMaterial material)
 	{
 		
 		super(material);
 		this.addEnchantment(Enchantment.fortune, 5);
-;		this.setUnlocalizedName("DiamondEnderPickaxe");
-		this.setTextureName("diamondender:DiamondEnderPickaxe");
+;		this.setUnlocalizedName("DiamondEnderSword");
+		this.setTextureName("diamondender:DiamondEnderSword");
 		this.setCreativeTab(DiamondEnder.tabDiamondEnderT3);
 	}
 

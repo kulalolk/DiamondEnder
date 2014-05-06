@@ -10,32 +10,32 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import DiamondEnder.DiamondEnder;
-import DiamondEnder.items.DiamondEnderSeeds;
-import DiamondEnder.items.RawDiamondEnder;
+import DiamondEnder.items.IronEnderSeeds;
+import DiamondEnder.items.RawIronEnder;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
  
-public class DiamondEnderCrop extends BlockCrops
+public class IronEnderCrop extends BlockCrops
 {
  
     private IIcon[] field_149867_a;
 
-	public DiamondEnderCrop()
+	public IronEnderCrop()
     {
     	// Basic block setup
-        this.setBlockName("DiamondEnderCrop");
+        this.setBlockName("IronEnderCrop");
         this.setBlockTextureName("recipeplus:blueberries_stage_0");
  
     }
  
     // this is seed item for the crop
-	public Item getItemSeed(){
-		return DiamondEnder.DiamondEnderSeeds;
+	public Item getSeedItem(){
+		return DiamondEnder.IronEnderSeeds;
 	}
  
     // this is item harvested from crop
 	public Item getCropItem(){
-		return DiamondEnder.RawDiamondEnder;
+		return DiamondEnder.RawIronEnder;
 	}
  
     /**
