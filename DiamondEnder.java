@@ -10,6 +10,7 @@ import DiamondEnder.blocks.DiamondEnderCrop;
 import DiamondEnder.items.DiamondEnderIngot;
 import DiamondEnder.items.DiamondEnderSeeds;
 import DiamondEnder.items.RawDiamondEnder;
+import DiamondEnder.items.DiamondEnderEssence;
 import DiamondEnder.items.tools.diamondEnder.DiamondEnderSword;
 import DiamondEnder.items.tools.diamondEnder.DiamondEnderPickaxe;
 import DiamondEnder.items.tools.diamondEnder.DiamondEnderAxe;
@@ -49,6 +50,7 @@ public class DiamondEnder
     public final static Item DiamondEnderSeeds = new DiamondEnderSeeds();
     public final static Item RawDiamondEnder = new RawDiamondEnder();
     public final static Item DiamondEnderIngot = new DiamondEnderIngot();
+    public final static Item DiamondEnderEssence = new DiamondEnderEssence();
     public final static Item DiamondEnderSword = new DiamondEnderSword(DiamondEnder);
     public final static Item DiamondEnderPickaxe = new DiamondEnderPickaxe(DiamondEnder);
     public final static Item DiamondEnderAxe = new DiamondEnderAxe(DiamondEnder);
@@ -67,6 +69,7 @@ public class DiamondEnder
     	GameRegistry.registerItem(DiamondEnderSeeds, "DiamondEnderSeeds");
     	GameRegistry.registerItem(RawDiamondEnder, "RawDiamondEnder");
     	GameRegistry.registerItem(DiamondEnderIngot, "DiamondEnderIngot");
+    	GameRegistry.registerItem(DiamondEnderEssence, "DiamondEnderEssence");
     	GameRegistry.registerItem(DiamondEnderSword, "DiamondEnderSword");
     	GameRegistry.registerItem(DiamondEnderPickaxe, "DiamondEnderPickaxe");
     	GameRegistry.registerItem(DiamondEnderAxe, "DiamondEnderAxe");
@@ -75,6 +78,7 @@ public class DiamondEnder
     	//ADDING NAMES TO BLOCKS & ITEMS
     	LanguageRegistry.addName(DiamondEnderCrop, "Diamond Ender Crop");
     	LanguageRegistry.addName(DiamondEnderSeeds, "�eDiamond Ender Seeds" + "�8 {Tier 3}");
+     LanguageRegistry.addName(DiamondEnderEssence, "�eDiamond Ender Essence" + "�8 {Tier 3}");
     	LanguageRegistry.addName(RawDiamondEnder, "�eRaw Diamond Ender" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderIngot, "�eDiamond Ender Ingot" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderSword, "�eDiamond Ender Sword" + "�8 {Tier 3}");    	
