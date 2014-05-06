@@ -11,7 +11,7 @@ public class DiamondEnderSeeds extends ItemSeeds
 		
 		super();
 		this.setUnlocalizedName("DiamondEnderSeeds");
-		this.setTextureName("recipeplus:blueberry");
+		this.setTextureName("diamondender:DiamondEnderSeeds");
 		this.setCreativeTab(DiamondEnder.tabDiamondEnderT3);
 	}
  
