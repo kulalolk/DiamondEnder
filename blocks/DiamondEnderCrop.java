@@ -24,7 +24,7 @@ public class DiamondEnderCrop extends BlockCrops
     {
     	// Basic block setup
         this.setBlockName("DiamondEnderCrop");
-        this.setBlockTextureName("recipeplus:blueberries_stage_0");
+        this.setBlockTextureName("diamondender:DiamondCrop_0");
  
     }
  
@@ -51,14 +51,14 @@ public class DiamondEnderCrop extends BlockCrops
   {
       this.field_149867_a = new IIcon[8];
       // seems that crops like to have 8 growth icons, but okay to repeat actual texture if you want
-      this.field_149867_a[0] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_0");
-      this.field_149867_a[1] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_0");
-      this.field_149867_a[2] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_1");
-      this.field_149867_a[3] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_1");
-      this.field_149867_a[4] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_2");
-      this.field_149867_a[5] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_2");
-      this.field_149867_a[6] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_3");
-      this.field_149867_a[7] = p_149651_1_.registerIcon("recipeplus:blueberries_stage_3");
+      this.field_149867_a[0] = p_149651_1_.registerIcon("diamondender:DiamondCrop_0");
+      this.field_149867_a[1] = p_149651_1_.registerIcon("diamondender:DiamondCrop_0");
+      this.field_149867_a[2] = p_149651_1_.registerIcon("diamondender:DiamondCrop_1");
+      this.field_149867_a[3] = p_149651_1_.registerIcon("diamondender:DiamondCrop_1");
+      this.field_149867_a[4] = p_149651_1_.registerIcon("diamondender:DiamondCrop_2");
+      this.field_149867_a[5] = p_149651_1_.registerIcon("diamondender:DiamondCrop_2");
+      this.field_149867_a[6] = p_149651_1_.registerIcon("diamondender:DiamondCrop_3");
+      this.field_149867_a[7] = p_149651_1_.registerIcon("diamondender:DiamondCrop_3");
  
   }
 }
