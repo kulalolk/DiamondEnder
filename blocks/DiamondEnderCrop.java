@@ -25,7 +25,7 @@ public class DiamondEnderCrop extends  BlockCrops implements IBonemeal
     	// Basic block setup
         this.setBlockName("DiamondEnderCrop");
         this.setBlockTextureName("diamondender:DiamondCrop_0");
- 
+        this.setCreativeTab(DiamondEnder.tabDiamondEnderT3); 
     }
  
     // this is seed item for the crop
