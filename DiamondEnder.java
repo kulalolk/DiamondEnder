@@ -69,13 +69,14 @@ public class DiamondEnder
     	GameRegistry.registerItem(RawDiamondEnder, "RawDiamondEnder");
     	GameRegistry.registerItem(DiamondEnderIngot, "DiamondEnderIngot");
     	GameRegistry.registerItem(DiamondEnderPickaxe, "DiamondEnderPickaxe");
+    	GameRegistry.registerItem(DiamondEnderAxe, "DiamondEnderAxe");
     	
     	LanguageRegistry.addName(DiamondEnderCrop, "Diamond Ender Crop");
     	LanguageRegistry.addName(DiamondEnderSeeds, "�eDiamond Ender Seeds" + "�8 {Tier 3}");
     	LanguageRegistry.addName(RawDiamondEnder, "�eRaw Diamond Ender" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderIngot, "�eDiamond Ender Ingot" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderPickaxe, "�eDiamond Ender Pickaxe" + "�8 {Tier 3}");
-    	    	LanguageRegistry.addName(DiamondEnderPickaxe, "�eDiamond Ender Axe" + "8 {Tier 3}");
+    	LanguageRegistry.addName(DiamondEnderAxe, "�eDiamond Ender Axe" + "�8 {Tier 3}");
     	
     	
     	// register tileentities
