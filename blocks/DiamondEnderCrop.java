@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import DiamondEnder.DiamondEnder;
 import DiamondEnder.items.DiamondEnderSeeds;
-import DiamondEnder.items.RawDiamondEnder;
+import DiamondEnder.items.DiamondEnderEssence;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
  
@@ -35,7 +35,7 @@ public class DiamondEnderCrop extends  BlockCrops implements IBonemeal
  
     // this is item harvested from crop
 	public Item getCropItem(){
-		return DiamondEnder.RawDiamondEnder;
+		return DiamondEnder.DiamondEnderEssence;
 	}
  
     /**
