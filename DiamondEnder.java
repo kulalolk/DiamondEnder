@@ -11,6 +11,8 @@ import DiamondEnder.items.DiamondEnderIngot;
 import DiamondEnder.items.DiamondEnderSeeds;
 import DiamondEnder.items.RawDiamondEnder;
 import DiamondEnder.items.tools.diamondEnder.DiamondEnderPickaxe;
+import DiamondEnder.items.tools.diamondEnder.DiamondEnderAxe;
+import DiamondEnder.items.tools.diamondEnder.DiamondEnderShovel;
 import DiamondEnder.util.DiamondEnderTabT1;
 import DiamondEnder.util.DiamondEnderTabT2;
 import DiamondEnder.util.DiamondEnderTabT3;
@@ -70,6 +72,7 @@ public class DiamondEnder
     	GameRegistry.registerItem(DiamondEnderIngot, "DiamondEnderIngot");
     	GameRegistry.registerItem(DiamondEnderPickaxe, "DiamondEnderPickaxe");
     	GameRegistry.registerItem(DiamondEnderAxe, "DiamondEnderAxe");
+    	    	GameRegistry.registerItem(DiamondEnderShovel, "DiamondEnderShovel");
     	
     	LanguageRegistry.addName(DiamondEnderCrop, "Diamond Ender Crop");
     	LanguageRegistry.addName(DiamondEnderSeeds, "�eDiamond Ender Seeds" + "�8 {Tier 3}");
@@ -77,7 +80,7 @@ public class DiamondEnder
     	LanguageRegistry.addName(DiamondEnderIngot, "�eDiamond Ender Ingot" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderPickaxe, "�eDiamond Ender Pickaxe" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderAxe, "�eDiamond Ender Axe" + "�8 {Tier 3}");
-    	
+    	LanguageRegistry.addName(DiamondEnderAxe, "�eDiamond Ender Shovel" + "�8 {Tier 3}");
     	
     	// register tileentities
  
