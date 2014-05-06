@@ -5,8 +5,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import DiamondEnder.DiamondEnder;
  
-public class DiamondEnderSeeds extends Item {
-
+public class DiamondEnderSeeds extends ItemSeeds
 	// Constructors
 	public DiamondEnderSeeds() {
 		
