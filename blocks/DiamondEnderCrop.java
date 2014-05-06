@@ -15,7 +15,7 @@ import DiamondEnder.items.RawDiamondEnder;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
  
-public class DiamondEnderCrop extends BlockCrops
+public class DiamondEnderCrop extends  BlockCrops implements IBonemeal
 {
  
     private IIcon[] field_149867_a;
