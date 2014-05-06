@@ -50,6 +50,8 @@ public class DiamondEnder
     public final static Item RawDiamondEnder = new RawDiamondEnder();
     public final static Item DiamondEnderIngot = new DiamondEnderIngot();
     public final static Item DiamondEnderPickaxe = new DiamondEnderPickaxe(DiamondEnder);
+    public final static Item DiamondEnderAxe = new DiamondEnderAxe(DiamondEnder);
+    public final static Item DiamondEnderShovel = new DiamondEnderShovel(DiamondEnder);
     
     @EventHandler
     // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the GameRegistry."
@@ -69,10 +71,11 @@ public class DiamondEnder
     	GameRegistry.registerItem(DiamondEnderPickaxe, "DiamondEnderPickaxe");
     	
     	LanguageRegistry.addName(DiamondEnderCrop, "Diamond Ender Crop");
-    	LanguageRegistry.addName(DiamondEnderSeeds, "§eDiamond Ender Seeds" + "§8 {Tier 3}");
-    	LanguageRegistry.addName(RawDiamondEnder, "§eRaw Diamond Ender" + "§8 {Tier 3}");
-    	LanguageRegistry.addName(DiamondEnderIngot, "§eDiamond Ender Ingot" + "§8 {Tier 3}");
-    	LanguageRegistry.addName(DiamondEnderPickaxe, "§eDiamond Ender Pickaxe" + "§8 {Tier 3}");
+    	LanguageRegistry.addName(DiamondEnderSeeds, "ï¿½eDiamond Ender Seeds" + "ï¿½8 {Tier 3}");
+    	LanguageRegistry.addName(RawDiamondEnder, "ï¿½eRaw Diamond Ender" + "ï¿½8 {Tier 3}");
+    	LanguageRegistry.addName(DiamondEnderIngot, "ï¿½eDiamond Ender Ingot" + "ï¿½8 {Tier 3}");
+    	LanguageRegistry.addName(DiamondEnderPickaxe, "ï¿½eDiamond Ender Pickaxe" + "ï¿½8 {Tier 3}");
+    	    	LanguageRegistry.addName(DiamondEnderPickaxe, "ï¿½eDiamond Ender Axe" + "8 {Tier 3}");
     	
     	
     	// register tileentities
