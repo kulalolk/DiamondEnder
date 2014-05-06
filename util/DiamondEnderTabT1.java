@@ -18,6 +18,5 @@ super(tabDiamondEnderT1);
 public Item getTabIconItem()
 {
 return Item.getItemFromBlock(Blocks.sponge);
-}
-
+  }
 }
