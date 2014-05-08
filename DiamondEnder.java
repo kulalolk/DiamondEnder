@@ -86,7 +86,6 @@ public class DiamondEnder
     public final static Item DiamondEnderPickaxe = new DiamondEnderPickaxe(DiamondEnder);
     public final static Item DiamondEnderAxe = new DiamondEnderAxe(DiamondEnder);
     public final static Item DiamondEnderShovel = new DiamondEnderShovel(DiamondEnder);
-    public final static Item DiamondEnderMultiTool = new DiamondEnderMultiTool(DiamondEnder);
     
         //Items & Blocks (Tier 4)
     public final static Block WitherEnderCrop = new WitherEnderCrop();
@@ -94,12 +93,11 @@ public class DiamondEnder
     public final static Item RawWitherEnder = new RawWitherEnder();
     public final static Item WitherEnderIngot = new WitherEnderIngot();
     public final static Item WitherEnderEssence = new WitherEnderEssence();
-    public final static Item WitherEnderSword = new WitherEnderSword(DiamondEnder);
-    public final static Item WitherEnderPickaxe = new WitherEnderPickaxe(DiamondEnder);
-    public final static Item WitherEnderAxe = new WitherEnderAxe(DiamondEnder);
-    public final static Item WitherEnderShovel = new WitherEnderShovel(DiamondEnder);
-    public final static Item WitherEnderMultiTool = new WitherEnderMultiTool(DiamondEnder);
-    
+    public final static Item WitherEnderSword = new WitherEnderSword(WitherEnder);
+    public final static Item WitherEnderPickaxe = new WitherEnderPickaxe(WitherEnder);
+    public final static Item WitherEnderAxe = new WitherEnderAxe(WitherEnder);
+    public final static Item WitherEnderShovel = new WitherEnderShovel(WitherEnder);
+
     @EventHandler
     // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the GameRegistry."
     public void preInit(FMLPreInitializationEvent event) {
@@ -107,7 +105,7 @@ public class DiamondEnder
         // DEBUG
         System.out.println("preInit()");
 
-        //Item & Block Registry (Tier 1)
+     //Item & Block Registry (Tier 1)
     	GameRegistry.registerBlock(IronEnderCrop, "IronEnderCrop");
     	GameRegistry.registerItem(IronEnderSeeds, "IronEnderSeeds");
     	GameRegistry.registerItem(RawIronEnder, "RawIronEnder");
@@ -115,7 +113,7 @@ public class DiamondEnder
     	GameRegistry.registerItem(IronEnderSword, "IronEnderSword");
     	GameRegistry.registerItem(IronEnderPickaxe, "IronEnderPickaxe");
         
-        //Item & Block Registry (Tier 2)
+     //Item & Block Registry (Tier 2)
     	GameRegistry.registerBlock(GoldEnderCrop, "GoldEnderCrop");
     	GameRegistry.registerItem(GoldEnderSeeds, "GoldEnderSeeds");
     	GameRegistry.registerItem(RawGoldEnder, "RawGoldEnder");
@@ -134,7 +132,18 @@ public class DiamondEnder
     	GameRegistry.registerItem(DiamondEnderSword, "DiamondEnderSword");
     	GameRegistry.registerItem(DiamondEnderAxe, "DiamondEnderAxe");
     	GameRegistry.registerItem(DiamondEnderShovel, "DiamondEnderShovel");
-    	GameRegistry.registerItem(DiamondEnderMultiTool, "DiamondEnderMultiTool");
+    	
+    		//Item & Block Registry (Tier 4)
+    	GameRegistry.registerBlock(WitherEnderCrop, "WitherEnderCrop");
+    	GameRegistry.registerItem(WitherEnderSeeds, "WitherEnderSeeds");
+    	GameRegistry.registerItem(RawWitherEnder, "RawWitherEnder");
+    	GameRegistry.registerItem(WitherEnderIngot, "WitherEnderIngot");
+    	GameRegistry.registerItem(WitherEnderEssence, "WitherEnderEssence");
+    	GameRegistry.registerItem(WitherEnderSword, "WitherEnderSword");
+    	GameRegistry.registerItem(WitherEnderPickaxe, "WitherEnderPickaxe");
+    	GameRegistry.registerItem(WitherEnderSword, "WitherEnderSword");
+    	GameRegistry.registerItem(WitherEnderAxe, "WitherEnderAxe");
+    	GameRegistry.registerItem(WitherEnderShovel, "WitherEnderShovel");
 
     	//Language Registry (Tier 1)
     	LanguageRegistry.addName(IronEnderCrop, "Iron Ender Crop");
@@ -162,7 +171,17 @@ public class DiamondEnder
     	LanguageRegistry.addName(DiamondEnderPickaxe, "�eDiamond Ender Pickaxe" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderShovel, "�eDiamond Ender Shovel" + "�8 {Tier 3}");
     	LanguageRegistry.addName(DiamondEnderAxe, "�eDiamond Ender Axe" + "�8 {Tier 3}");
-    	LanguageRegistry.addName(DiamondEnderMultiTool, "�eDiamond Ender Multi Tool" + "�8 {Tier 3}");
+    	
+    	//Language Registry (Tier 3)
+    	LanguageRegistry.addName(WitherEnderCrop, "Wither Ender Crop");
+    	LanguageRegistry.addName(WitherEnderSeeds, "�eWither Ender Seeds" + "�8 {Tier 4}");
+    	LanguageRegistry.addName(RawWitherEnder, "�eRaw Wither Ender" + "�8 {Tier 4}");
+    	LanguageRegistry.addName(WitherEnderEssence, "�eWither Ender Essence" + "�8 {Tier 4}");
+    	LanguageRegistry.addName(WitherEnderIngot, "�eWither Ender Ingot" + "�8 {Tier 4}");
+    	LanguageRegistry.addName(WitherEnderSword, "�eWitehr Ender Sword" + "�8 {Tier 4}");
+    	LanguageRegistry.addName(WitherEnderPickaxe, "�eWither Ender Pickaxe" + "�8 {Tier 4}");
+    	LanguageRegistry.addName(WitherEnderShovel, "�eWither Ender Shovel" + "�8 {Tier 4}");
+    	LanguageRegistry.addName(WitherEnderAxe, "�eWither Ender Axe" + "�8 {Tier 4}");
 
     	// register tileentities
  
