@@ -92,13 +92,13 @@ public class DiamondEnder
     public final static Block WitherEnderCrop = new WitherEnderCrop();
     public final static Item WitherEnderSeeds = new WitherEnderSeeds();
     public final static Item RawWitherEnder = new RawWitherEnder();
-    public final static Item DiamondEnderIngot = new DiamondEnderIngot();
-    public final static Item DiamondEnderEssence = new DiamondEnderEssence();
-    public final static Item DiamondEnderSword = new DiamondEnderSword(DiamondEnder);
-    public final static Item DiamondEnderPickaxe = new DiamondEnderPickaxe(DiamondEnder);
-    public final static Item DiamondEnderAxe = new DiamondEnderAxe(DiamondEnder);
-    public final static Item DiamondEnderShovel = new DiamondEnderShovel(DiamondEnder);
-    public final static Item DiamondEnderMultiTool = new DiamondEnderMultiTool(DiamondEnder);
+    public final static Item WitherEnderIngot = new WitherEnderIngot();
+    public final static Item WitherEnderEssence = new WitherEnderEssence();
+    public final static Item WitherEnderSword = new WitherEnderSword(DiamondEnder);
+    public final static Item WitherEnderPickaxe = new WitherEnderPickaxe(DiamondEnder);
+    public final static Item WitherEnderAxe = new WitherEnderAxe(DiamondEnder);
+    public final static Item WitherEnderShovel = new WitherEnderShovel(DiamondEnder);
+    public final static Item WitherEnderMultiTool = new WitherEnderMultiTool(DiamondEnder);
     
     @EventHandler
     // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the GameRegistry."
