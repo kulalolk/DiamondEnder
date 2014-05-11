@@ -2,16 +2,11 @@ package DiamondEnder.blocks;
  
 import java.util.Random;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import DiamondEnder.DiamondEnder;
-import DiamondEnder.items.GoldEnderSeeds;
-import DiamondEnder.items.RawGoldEnder;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
  

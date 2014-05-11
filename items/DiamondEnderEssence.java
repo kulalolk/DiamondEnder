@@ -11,7 +11,6 @@ public class DiamondEnderEssence extends Item
 	public DiamondEnderEssence() {
 
 		super();
-		this.setUnlocalizedName("DiamondEnderEssence");
 		this.setTextureName("diamondender:DiamondEnderEssence");
 		this.setCreativeTab(DiamondEnder.tabDiamondEnderT3);
 	} 

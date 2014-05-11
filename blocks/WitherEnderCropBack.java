@@ -2,35 +2,39 @@ package DiamondEnder.blocks;
  
 import java.util.Random;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
-import net.minecraft.block.IGrowable;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import DiamondEnder.DiamondEnder;
+import DiamondEnder.items.WitherEnderSeeds;
+import DiamondEnder.items.RawWitherEnder;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
  
-public class DiamondEnderCrop extends BlockCrops implements IGrowable
+public class WitherEnderCropBack extends BlockCrops
 {
  
-    private IIcon[] field_149867_a;
 
-	public DiamondEnderCrop()
+	public WitherEnderCropBack()
     {
     	// Basic block setup
-        this.setBlockName("DiamondEnderCrop");
-        this.setBlockTextureName("diamondender:DiamondCrop_0");
+        this.setBlockName("WitherEnderCrop");
+        this.setBlockTextureName("diamondender:WitherEnderCrop");
+ 
     }
  
     // this is seed item for the crop
-	public Item getItemSeed(){
-		return DiamondEnder.DiamondEnderSeeds;
+	public Item getSeedItem(){
+		return DiamondEnder.WitherEnderSeeds;
 	}
  
     // this is item harvested from crop
 	public Item getCropItem(){
-		return DiamondEnder.DiamondEnderEssence;
+		return DiamondEnder.WitherEnderEssence;
 	}
  
     /**
@@ -40,5 +44,11 @@ public class DiamondEnderCrop extends BlockCrops implements IGrowable
     {
         return 1;
     }
- }
+    
+  @SideOnly(Side.CLIENT)
+  public void registerBlockIcons(IIconRegister p_149651_1_)
+  {
 
+ 
+  }
+}

@@ -17,7 +17,7 @@ super(tabDiamondEnderT2);
 @SideOnly(Side.CLIENT)
 public Item getTabIconItem()
 {
-return Item.getItemFromBlock(Blocks.dirt);
+return Item.getItemFromBlock(Blocks.gold_block);
 }
 
 }

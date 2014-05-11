@@ -17,6 +17,6 @@ super(tabDiamondEnderT4);
 @SideOnly(Side.CLIENT)
 public Item getTabIconItem()
 {
-return Item.getItemFromBlock(Items.netherStar);
+return Item.getItemFromBlock(Blocks.beacon);
   }
 }

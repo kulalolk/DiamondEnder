@@ -9,7 +9,6 @@ public class DiamondEnderIngot extends Item {
 	public DiamondEnderIngot() {
 		
 		super();
-		this.setUnlocalizedName("DiamondEnderIngot");
 		this.setTextureName("diamondender:DiamondEnderIngot");
 		this.setCreativeTab(DiamondEnder.tabDiamondEnderT3); 
 	}
