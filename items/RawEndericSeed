@@ -1,0 +1,17 @@
+package DiamondEnder.items;
+ 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import DiamondEnder.RawEndericSeed;
+ 
+public class RawEndericSeed extends Item
+{
+	// Constructors
+	public RawEndericSeed() {
+
+		super();
+		this.setTextureName("diamondender:RawEndericSeed");
+		this.setCreativeTab(DiamondEnder.tabDiamondEnder);
+	} 
+}
