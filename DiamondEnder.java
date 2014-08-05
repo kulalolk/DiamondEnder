@@ -77,6 +77,9 @@ public class DiamondEnder
     static ToolMaterial GoldEnder = EnumHelper.addToolMaterial("GoldEnder", 4, 5000, 17.5F, 11.0F, 30);
     static ToolMaterial DiamondEnder = EnumHelper.addToolMaterial("DiamondEnder", 4, 10000, 20.0F, 16.0F, 30);
     static ToolMaterial WitherEnder = EnumHelper.addToolMaterial("WitherEnder", 4, -1, 15.0F, 46.0F, 30);
+    
+    //Items & Blocks (misc.)
+    public final static Item RawEndericSeeds = new RawEndericSeeds();
 
     //Items & Blocks (Tier 1)
     public final static Block IronEnderCrop = new IronEnderCrop();
@@ -215,6 +218,7 @@ public class DiamondEnder
     	GameRegistry.addShapedRecipe(new ItemStack(RawIronEnder, 2), "yxy", "xyx", "yxy", 'x', Items.ender_pearl, 'y', Items.iron_ingot);
     	GameRegistry.addShapedRecipe(new ItemStack(RawIronEnder, 2), "xyx", "yxy", "xyx", 'x', Items.ender_pearl, 'y', Items.iron_ingot);
     	GameRegistry.addSmelting(RawIronEnder, new ItemStack(IronEnderIngot), 100.0F);
+    	
     	GameRegistry.addShapedRecipe(new ItemStack(IronEnderSword), " x ", " x ", " y ", 'x', IronEnderIngot, 'y', Items.stick);
     	GameRegistry.addShapedRecipe(new ItemStack(IronEnderPickaxe), "xxx", " y ", " y ", 'x', IronEnderIngot, 'y', Items.stick);
     	GameRegistry.addShapedRecipe(new ItemStack(IronEnderShovel), " x ", " y ", " y ", 'x', IronEnderIngot, 'y', Items.stick);
@@ -224,6 +228,7 @@ public class DiamondEnder
     	GameRegistry.addShapedRecipe(new ItemStack(RawGoldEnder, 2), "yxy", "xyx", "yxy", 'x', Items.ender_pearl, 'y', Items.gold_ingot);
     	GameRegistry.addShapedRecipe(new ItemStack(RawGoldEnder, 2), "xyx", "yxy", "xyx", 'x', Items.ender_pearl, 'y', Items.gold_ingot);
     	GameRegistry.addSmelting(RawGoldEnder, new ItemStack(GoldEnderIngot), 100.0F);
+    
     	GameRegistry.addShapedRecipe(new ItemStack(GoldEnderSword), " x ", " x ", " y ", 'x', GoldEnderIngot, 'y', Items.stick);
     	GameRegistry.addShapedRecipe(new ItemStack(GoldEnderPickaxe), "xxx", " y ", " y ", 'x', GoldEnderIngot, 'y', Items.stick);
     	GameRegistry.addShapedRecipe(new ItemStack(GoldEnderShovel), " x ", " y ", " y ", 'x', GoldEnderIngot, 'y', Items.stick);
@@ -256,6 +261,8 @@ public class DiamondEnder
     	CraftingManager.getInstance().addRecipe(DiamondEnderAxeStack, "xx ", "xy ", " y ", 'x', DiamondEnderIngot, 'y', Items.stick);
     	
     	//Recipes (Tier 4)
+    	GameRegistry.addShapedRecipe(new ItemStack(WitherEndericSeeds, 1), "xxx", "xyx", "xxx", 'x', Items.nether_star, 'y', RawEndericSeeds
+    	
     	GameRegistry.addShapedRecipe(new ItemStack(RawWitherEnder, 4), "yxy", "xyx", "yxy", 'x', Items.ender_pearl, 'y', Items.nether_star);
     	GameRegistry.addShapedRecipe(new ItemStack(RawWitherEnder, 4), "xyx", "yxy", "xyx", 'x', Items.ender_pearl, 'y', Items.nether_star);
     	GameRegistry.addSmelting(RawWitherEnder, new ItemStack(WitherEnderIngot), 100.0F);
