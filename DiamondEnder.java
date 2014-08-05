@@ -25,6 +25,7 @@ import DiamondEnder.items.IronEnderSeeds;
 import DiamondEnder.items.RawDiamondEnder;
 import DiamondEnder.items.RawGoldEnder;
 import DiamondEnder.items.RawIronEnder;
+import DiamondEnder.items.RawEndericSeed;
 import DiamondEnder.items.RawWitherEnder;
 import DiamondEnder.items.WitherEnderEssence;
 import DiamondEnder.items.WitherEnderIngot;
@@ -79,7 +80,7 @@ public class DiamondEnder
     static ToolMaterial WitherEnder = EnumHelper.addToolMaterial("WitherEnder", 4, -1, 15.0F, 46.0F, 30);
     
     //Items & Blocks (misc.)
-    public final static Item RawEndericSeeds = new RawEndericSeeds();
+    public final static Item RawEndericSeed = new RawEndericSeed();
 
     //Items & Blocks (Tier 1)
     public final static Block IronEnderCrop = new IronEnderCrop();
@@ -130,6 +131,9 @@ public class DiamondEnder
         // DEBUG
         System.out.println("preInit()");
         
+        //Item & Block Registry (MISC.)
+        GameRegistry,registerItem(RawEndericSeed, "RawEndericSeed");
+        
         //Item & Block Registry (Tier 1)
     	GameRegistry.registerBlock(IronEnderCrop, "IronEnderCrop");
     	GameRegistry.registerItem(IronEnderSeeds, "IronEnderSeeds");
@@ -171,6 +175,9 @@ public class DiamondEnder
     	GameRegistry.registerItem(WitherEnderPickaxe, "WitherEnderPickaxe");
     	GameRegistry.registerItem(WitherEnderAxe, "WitherEnderAxe");
     	GameRegistry.registerItem(WitherEnderShovel, "WitherEnderShovel");
+    	
+    	//Language Registry (MISC.)
+    	LanguageRegistry.addName(RawEndericSeed, "Raw Enderic Seed");
     	
     	//Language Registry (Tier 1)
     	LanguageRegistry.addName(IronEnderCrop, "Iron Ender Crop [WIP - MAY CRASH]");
@@ -261,7 +268,7 @@ public class DiamondEnder
     	CraftingManager.getInstance().addRecipe(DiamondEnderAxeStack, "xx ", "xy ", " y ", 'x', DiamondEnderIngot, 'y', Items.stick);
     	
     	//Recipes (Tier 4)
-    	GameRegistry.addShapedRecipe(new ItemStack(WitherEndericSeeds, 1), "xxx", "xyx", "xxx", 'x', Items.nether_star, 'y', RawEndericSeeds
+    	GameRegistry.addShapedRecipe(new ItemStack(WitherEndericSeed, 1), "xxx", "xyx", "xxx", 'x', Items.nether_star, 'y', RawEndericSeed);
     	
     	GameRegistry.addShapedRecipe(new ItemStack(RawWitherEnder, 4), "yxy", "xyx", "yxy", 'x', Items.ender_pearl, 'y', Items.nether_star);
     	GameRegistry.addShapedRecipe(new ItemStack(RawWitherEnder, 4), "xyx", "yxy", "xyx", 'x', Items.ender_pearl, 'y', Items.nether_star);
@@ -271,6 +278,7 @@ public class DiamondEnder
     	WitherEnderSwordStack.addEnchantment(Enchantment.looting, 5);
     	WitherEnderSwordStack.addEnchantment(Enchantment.unbreaking, 5);
     	WitherEnderSwordStack.addEnchantment(Enchantment.baneOfArthropods, 5);
+   	WitherEnderSwordStack.addEffect(Effect.wither, 5);
     	CraftingManager.getInstance().addRecipe(WitherEnderSwordStack, "x", "x", "y", 'x', WitherEnderIngot, 'y', Items.stick);
     	
     	ItemStack WitherEnderPickaxeStack = new ItemStack(WitherEnderPickaxe);
